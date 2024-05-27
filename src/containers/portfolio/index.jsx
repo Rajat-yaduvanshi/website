@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
-        headerText="My Resume"
+        headerText="My Portfolio"
         icon={<BsInfoCircleFill size={40} />}
       />
     </section>
