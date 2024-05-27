@@ -7,7 +7,7 @@ const Resume = () => {
     <section id="resume" className="resume">
       <PageHeaderContent
         headerText="My Resume"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<button> Resume </button>}
       />
     </section>
   )
