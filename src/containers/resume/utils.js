@@ -1,27 +1,27 @@
 export const data = {
   experience: [
     {
-      title: "",
-      subTitle: "",
-      description: "",
+      title: "aaaaa",
+      subTitle: "bbbbbbbbbb",
+      description: "cccccc",
     },
     {
-      title: "",
-      subTitle: "",
-      description: "",
+      title: "ddddd",
+      subTitle: "eeeeeeeeee",
+      description: "ffffffffff",
     },
   ],
 
   education: [
     {
-      title: "",
-      subTitle: "",
-      description: "",
+      title: "ggggggggg",
+      subTitle: "hhhhhhhhh",
+      description: "iiiiiiiii",
     },
     {
-      title: "",
-      subTitle: "",
-      description: "",
+      title: "jjjjjjjjj",
+      subTitle: "kkkkkkkk",
+      description: "llllllllll",
     },
   ],
 };
