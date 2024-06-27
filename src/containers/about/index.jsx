@@ -5,7 +5,7 @@ import { Animate } from "react-simple-animate";
 import "./style.scss";
 import { FaReact } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
-import { FaGitlab, FaCss3Alt ,FaHtml5 } from "react-icons/fa6";
+import { FaGitlab, FaCss3Alt, FaHtml5 } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiJquery } from "react-icons/si";
 import { BiSolidFileJson } from "react-icons/bi";
@@ -47,7 +47,7 @@ const About = () => {
         <div className="about_content_personalWrapper">
           <Animate
             play
-            duration={1.5}
+            duration={1}
             // delay={.5}
             start={{
               transform: "translateX(-900px)",
@@ -85,7 +85,7 @@ const About = () => {
           </Animate>
         </div>
         <div className="about_content_servicesWrapper">
-        <Animate
+          <Animate
             play
             duration={1.5}
             // delay={.5}
@@ -96,41 +96,41 @@ const About = () => {
               transform: "translatex(0px)",
             }}
           >
-          <div className="about_content_servicesWrapper_innerContent">
-            <div>
-              <FaReact size={60} color="var(--yellow-theme-main-color)" />
+            <div className="about_content_servicesWrapper_innerContent">
+              <div>
+                <FaReact size={60} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <TbBrandRedux
+                  size={60}
+                  color="var(--yellow-theme-main-color)"
+                />
+              </div>
+              <div>
+                <FaGitlab size={60} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <FaCss3Alt size={60} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <RiJavascriptFill
+                  size={60}
+                  color="var(--yellow-theme-main-color)"
+                />
+              </div>
+              <div>
+                <SiJquery size={60} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <BiSolidFileJson
+                  size={60}
+                  color="var(--yellow-theme-main-color)"
+                />
+              </div>
+              <div>
+                <FaHtml5 size={60} color="var(--yellow-theme-main-color)" />
+              </div>
             </div>
-            <div>
-              <TbBrandRedux size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-            <div>
-              <FaGitlab size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-            <div>
-              <FaCss3Alt size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-            <div>
-              <RiJavascriptFill
-                size={60}
-                color="var(--yellow-theme-main-color)"
-              />
-            </div>
-            <div>
-              <SiJquery size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-            <div>
-              <BiSolidFileJson
-                size={60}
-                color="var(--yellow-theme-main-color)"
-              />
-            </div>
-            <div>
-              <FaHtml5
-                size={60}
-                color="var(--yellow-theme-main-color)"
-              />
-            </div>
-          </div>
           </Animate>
         </div>
       </div>

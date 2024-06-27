@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
+import { Animate } from "react-simple-animate";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import portfolio from "../../images/portfolio.png";
 import puzzel from "../../images/puzzel.png";
@@ -84,6 +85,17 @@ const Portfolio = () => {
             </li>
           ))}
         </ul>
+        <Animate
+            play
+            duration={1}
+            // delay={.5}
+            start={{
+              transform: "translateX(500px)",
+            }}
+            end={{
+              transform: "translatex(0px)",
+            }}
+          >
         <div className="portfolio_content_cards">
           {filteredItems.map((item, index) => (
             <div
@@ -108,6 +120,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+        </Animate>
       </div>
     </section>
   );
