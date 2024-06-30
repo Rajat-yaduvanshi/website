@@ -1,5 +1,6 @@
 import React from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
+// import { BsInfoCircleFill } from "react-icons/bs";
+import { GiSkills } from "react-icons/gi";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { skillsData } from "./utils";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
@@ -11,7 +12,7 @@ const Skills = () => {
     <section id="skills" className="skills">
       <PageHeaderContent
         headerText="My Skills"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<GiSkills size={40} />}
       />
       <div className="skills_content-wrapper">
         {skillsData.map((item, i) => (
@@ -19,7 +20,7 @@ const Skills = () => {
             <Animate
               play
               duration={1}
-              delay={0.3}
+              delay={0.5}
               start={{
                 transform: "translateX(-200px)",
               }}

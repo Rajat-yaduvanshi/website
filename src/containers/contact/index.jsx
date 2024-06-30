@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { IoMdCall } from "react-icons/io";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./style.scss";
@@ -9,13 +9,13 @@ const Contact = () => {
     <section id="contact" className="contact">
       <PageHeaderContent
         headerText="My Contact"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<IoMdCall size={40} />}
       />
       <div className="contact_content">
         <Animate
           play
           duration={1}
-          delay={0}
+          delay={.2}
           start={{
             transform: "translateX(-200px)",
           }}

@@ -57,15 +57,15 @@
       align-items: center;
 
       &_innerContent {
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 400px;
         background: radial-gradient(
           180px,
           var(--yellow-theme-main-color),
           transparent 90%
         );
         position: relative;
-        border-radius: 50%;
+        border-radius: 80%;
         border: 1.5px solid var(--yellow-theme-main-color);
         animation: rotation 10s linear 1s infinite;
 

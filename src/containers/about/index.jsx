@@ -9,32 +9,11 @@ import { FaGitlab, FaCss3Alt, FaHtml5 } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiJquery } from "react-icons/si";
 import { BiSolidFileJson } from "react-icons/bi";
+import data from "./data.json";
 
-const personalDetails = [
-  {
-    label: "Name",
-    value: "Rajat yadav",
-  },
-  {
-    label: "DOB",
-    value: "15/09/1996",
-  },
-  {
-    label: "Address",
-    value: "Gurgaon , India",
-  },
-  {
-    label: "Email",
-    value: "015rajaty@gmail.com",
-  },
-  {
-    label: "Contact no.",
-    value: "+919315961569",
-  },
-];
 
 const jobSummary =
-  "Seasoned and independent Front End Developer with 3 Year of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development,proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design.";
+  "Seasoned and independent Front End Developer with more than 2 Year of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development,proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design.I have a deep appreciation for exploring and understanding diverse cultures, thought processes, and I thoroughly enjoy engaging in conversations about anything and everything interesting.When i am not in front of the screen, you'll find me hanging out with my pet , doodling something or explore something new.";
 
 const About = () => {
   return (
@@ -75,7 +54,7 @@ const About = () => {
               Personal Information
             </h3>
             <ul>
-              {personalDetails.map((item, i) => (
+              {data.map((item, i) => (
                 <li key={i}>
                   <span className="title">{item.label}</span>
                   <span className="value">{item.value}</span>

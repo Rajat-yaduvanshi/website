@@ -20,7 +20,7 @@
       position: relative;
       overflow: hidden;
       white-space: nowrap;
-      animation: typingEffectAnimation 2.5s steps(30);
+      animation: typingEffectAnimation 2s steps(30);
     }
   }
 }
@@ -51,7 +51,7 @@
     width: 0;
   }
   to {
-    width: 100%;
+    width: 50%;
   }
 }
 

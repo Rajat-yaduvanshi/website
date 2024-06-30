@@ -7,45 +7,58 @@ export const skillsData = [
                 percentage: "90",
             },
             {
-                skillName: "CSS",
-                percentage: "50",
+                skillName: "JavaScript",
+                percentage: "80",
             },
             {
-                skillName: "JAVASCRIPT",
+                skillName: "React.Js",
+                percentage: "70",
+            },
+            {
+                skillName: "Redux",
+                percentage: "70",
+            },
+
+        ],
+    },
+    {
+        label: "STYLING",
+        data: [
+            {
+                skillName: "Tailwind CSS",
                 percentage: "80",
+            },
+            {
+                skillName: "CSS3 & SCSS",
+                percentage: "70",
+            },
+            {
+                skillName: "Material UI",
+                percentage: "90",
+            },
+            {
+                skillName: "Bootstrap",
+                percentage: "90",
             },
         ],
     },
     {
-        label: "BACK END",
+        label: "TOOLS",
         data: [
             {
-                skillName: "HTML",
+                skillName: "GitHub & GitLab",
                 percentage: "90",
             },
             {
-                skillName: "CSS",
-                percentage: "50",
-            },
-            {
-                skillName: "JAVASCRIPT",
-                percentage: "80",
-            },
-        ],
-    },
-    {
-        label: "BACK END",
-        data: [
-            {
-                skillName: "HTML",
+                skillName: "VS Code",
                 percentage: "90",
             },
             {
-                skillName: "CSS",
-                percentage: "50",
+                skillName: "Jira",
+                percentage: "70",
             },
             {
-                skillName: "JAVASCRIPT",
+                skillName: "Postman",
                 percentage: "80",
             },
         ],

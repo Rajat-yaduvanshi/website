@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { CgProfile } from "react-icons/cg";
 import { Animate } from "react-simple-animate";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import portfolio from "../../images/portfolio.png";
@@ -63,7 +63,7 @@ const Portfolio = () => {
   }
 
   const filteredItems =
-    filteredvalue == 1
+    filteredvalue === 1
       ? portfolioData
       : portfolioData.filter((item) => item.id === filteredvalue);
 
@@ -71,7 +71,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<CgProfile  size={40} />}
       />
       <div className="portfolio_content">
         <ul className="portfolio_content_filter">
