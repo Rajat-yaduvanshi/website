@@ -98,6 +98,13 @@
               border: 1.5px solid black;
               border-radius: 4px;
               font-weight: 500;
+
+              &:hover {
+                color: black;
+                background: rgba(61, 155, 17, 0.724);
+                transform: scale(1.1);
+                transition: transform 0.2s;
+              }
             }
           }
         }
@@ -116,7 +123,7 @@
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width:767px){
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .portfolio_content_filter > li {
     font-size: 14px;
   }
@@ -124,10 +131,8 @@
   .portfolio_content_cards {
     grid-template-columns: repeat(2, 1fr);
 
-
-    &_item{
-
-      .overlay{
+    &_item {
+      .overlay {
         div > p {
           font-size: 2.5rem;
         }
@@ -135,7 +140,6 @@
     }
   }
 }
-
 
 @keyframes typingEffect {
   from {

@@ -25,6 +25,10 @@
       text-transform: uppercase;
       padding: 5px 10px;
       border-bottom: 2px solid var(--yellow-theme-main-color);
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+      }
     }
     &_header-text::before,
     &_header-text::after {
@@ -56,6 +60,10 @@
       h3,
       h4 {
         font-size: 16px;
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 0.2s;
+        }
       }
       h4 {
         margin-left: 8px;
@@ -89,7 +97,6 @@
   border: 2.5px solid var(--yellow-theme-main-color);
   color: var(--yellow-theme-main-color);
   border-radius: 4px;
-
 }
 
 .btn-success {
@@ -105,24 +112,27 @@
   &:hover {
     color: black;
     background: var(--yellow-theme-main-color);
+    transform: scale(1.03);
+    transition: transform 0.2s;
   }
 }
 .form-control {
-    cursor: pointer;
-    padding: 8px;
-    font-size: 2rem;
-    background: transparent;
-    color: var(--yellow-theme-main-color);
-    border: 1.5px solid var(--yellow-theme-main-color);
-    border-radius: 4px;
-    font-weight: 500;
-  
-    &:hover {
-      color: black;
-      background: var(--yellow-theme-main-color);
-    }
+  cursor: pointer;
+  padding: 8px;
+  font-size: 2rem;
+  background: transparent;
+  color: var(--yellow-theme-main-color);
+  border: 1.5px solid var(--yellow-theme-main-color);
+  border-radius: 4px;
+  font-weight: 500;
+
+  &:hover {
+    color: black;
+    background: var(--yellow-theme-main-color);
+    transform: scale(1.03);
+    transition: transform 0.2s;
   }
-  
+}
 
 @media only screen and (max-width: 768px) {
   .timeline {
@@ -133,7 +143,8 @@
       gap: 2rem;
     }
   }
-  .btn-success , .form-control{
+  .btn-success,
+  .form-control {
     padding: 5px 10px;
   }
 }

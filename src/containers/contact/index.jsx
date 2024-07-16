@@ -8,14 +8,14 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <PageHeaderContent
-        headerText="My Contact"
+        headerText={<span>My Contact</span>}
         icon={<IoMdCall size={40} />}
       />
       <div className="contact_content">
         <Animate
           play
           duration={1}
-          delay={.2}
+          delay={0.2}
           start={{
             transform: "translateX(-200px)",
           }}

@@ -71,7 +71,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<CgProfile  size={40} />}
+        icon={<CgProfile size={40} />}
       />
       <div className="portfolio_content">
         <ul className="portfolio_content_filter">
@@ -86,40 +86,42 @@ const Portfolio = () => {
           ))}
         </ul>
         <Animate
-            play
-            duration={1}
-            // delay={.5}
-            start={{
-              transform: "translateX(500px)",
-            }}
-            end={{
-              transform: "translatex(0px)",
-            }}
-          >
-        <div className="portfolio_content_cards">
-          {filteredItems.map((item, index) => (
-            <div
-              className="portfolio_content_cards_item"
-              key={`curdItems${item.name.trim()}`}
-              onMouseEnter={() => handleHover(index)}
-              onMouseLeave={() => handleHover(index)}
-            >
-              <div className="portfolio_content_cards_item_img-wrapper">
-                <a>
-                  <img alt="dummy data" src={item.image} />
-                </a>
+          play
+          duration={1}
+          // delay={.5}
+          start={{
+            transform: "translateX(500px)",
+          }}
+          end={{
+            transform: "translatex(0px)",
+          }}
+        >
+          <div className="portfolio_content_cards">
+            {filteredItems.map((item, index) => (
+              <div
+                className="portfolio_content_cards_item"
+                key={`curdItems${item.name.trim()}`}
+                onMouseEnter={() => handleHover(index)}
+                onMouseLeave={() => handleHover(index)}
+              >
+                <div className="portfolio_content_cards_item_img-wrapper">
+                  <a>
+                    <img alt="dummy data" src={item.image} />
+                  </a>
+                </div>
+                <div className="overlay">
+                  {index === hoveredvalue && (
+                    <div>
+                      <p>{item.name}</p>
+                      <button onClick={() => window.open(item.link, "_blank")}>
+                        Visit
+                      </button>
+                    </div>
+                  )}
+                </div>
               </div>
-              <div className="overlay">
-                {index === hoveredvalue && (
-                  <div>
-                    <p>{item.name}</p>
-                    <button>Visit</button>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </Animate>
       </div>
     </section>
