@@ -1,105 +1,116 @@
-.navbar {
+.active {
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  // background-color: var(--yellow-theme-background-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
   background-color: var(--yellow-theme-nav-background-color);
-  height: 80px;
+  // position: sticky;
+  // top: 0;
+}
+
+nav .logo {
+  color: var(--yellow-theme-main-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  cursor: pointer;
 
-  &_container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: inherit;
-    padding: 0px 20px;
-    flex: 1;
-
-    &_logo {
-      color: var(--yellow-theme-main-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.5);
-        transition: transform 0.2s;
-      }
-    }
-
-    &_menu {
-      display: flex;
-      list-style: none;
-      text-align: center;
-
-      &_item {
-        line-height: 40px;
-        margin-right: 1.5rem;
-        font-size: 1.6rem;
-
-        &:hover {
-          transform: scale(1.3);
-          transition: transform 0.2s;
-          text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-        }
-
-        &::after {
-          content: "";
-          display: block;
-          height: 3px;
-          width: 0;
-          background: transparent;
-          transition: all 0.5ms ease;
-        }
-
-        &:hover::after {
-          width: 100%;
-          background: var(--yellow-theme-main-color);
-          //   transform: scale(1.1);
-          //   transition: transform 0.2s;
-        }
-
-        &_links {
-          color: var(--yellow-theme-main-color);
-          text-decoration: none;
-          padding: 0.5rem;
-        }
-      }
-    }
+  &:hover {
+    // transform: scale(1.5);
+    transition: transform 0.5s;
+    transform: rotate(360deg);
   }
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 40px;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
+
+  &:hover {
+    transform: scale(1.3);
+    transition: transform 0.2s;
+    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+  }
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   height: 3px;
+  //   width: 0;
+  //   background: transparent;
+  //   transition: all 0.5ms ease;
+  // }
+  // &:hover::after {
+  //   width: 100%;
+  //   background: var(--yellow-theme-main-color);
+  //   //   transform: scale(1.1);
+  //   //   transition: transform 0.2s;
+  // }
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--yellow-theme-main-color);
+  padding: .5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .nav-icon {
   display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  // width: 2.25rem;
+  // height: 2rem;   
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar_container_menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: -110%;
-    opacity: 1;
-    transition: all 0.5s ease;
-
-    &.active {
-      background: #181818;
-      left: 0px;
-      opacity: 1;
-    }
-    &_item {
-      border-bottom: 1px solid #282828;
-      margin: 0px;
-      padding: 20px 0px;
-    }
-  }
+@media only screen and (max-width: 768px){
   .nav-icon {
-    display: block;
+    display: flex;
+    top: 0.75rem;
     cursor: pointer;
     color: var(--yellow-theme-main-color);
     padding-right: 20px;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: start;
+    height: max;
+  } 
+
+  nav ul.open{
+    display: flex;
+    // transition: transform 0.2s;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a{
+    margin: 0.2rem 0.5rem;
   }
 }
